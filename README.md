@@ -7,9 +7,19 @@ A simple jquery plugin that is similar to classie.js where it allows quick alter
 
 
 ``` js
-$(*).hasKlass( element ) ==> returns true/false
-$(*).addKlass('my-new-class-1', 'my-new-class-2', ... ) ==> adds the listed classes ==> Returns the element
-$(*).removeKlass( 'my-unwanted-class-1', 'my-unwanted-class-1', ... ) ==> removes the listed classes ==> Returns the element
-$(*).toggleKlass( 'my-class-1', 'my-class-2', ... ) ==> removes the class if it exists otherwise it will add it ==> Returns the element
-$(*).switchKlass( ['my-class-1', 'my-class-1', ...], ['my-other-class-1', 'my-other-class-1', ...], true ) ==> Will remove all the elements in the first array and add all the elements in the second if the 3rd parameter is true, Otherwise it will do the opposite. ==> Returns the element
+var domElement = document.getElementsByTagName("body")[0];
+
+// Checks the existence of a classes. If all classes exist it will return true. 
+// If at least one class doesn't exist then it will return false
+klassy.hasKlass( domElement, "class-to-find-on-element", "another-class-to-find", ... ) ==> returns true/false
+
+//adds the listed classes
+klassy.addKlass(domeElement, 'my-new-class-1', 'my-new-class-2', ... ) ==>  Returns klassy object
+ 
+//removes the listed classes
+klassy.removeKlass(domeElement, 'my-unwanted-class-1', 'my-unwanted-class-1', ... ) ==> Returns klassy object
+
+//removes the class if it exists otherwise it will add it
+klassy.toggleKlass(domeElement, 'my-class-1', 'my-class-2', ... )  ==> Returns klassy object
+
 ```
