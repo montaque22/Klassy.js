@@ -2,7 +2,8 @@
 /*
  * KLASSY.JS
  * CREATED BY: Michael G. Montaque
- * DESCRIPTION: A simple Jquery plugin that allows a klassy way to remove and insert classes to an element on the DOM
+ * DATE: May 6, 2014
+ * DESCRIPTION: A simple plugin that allows a klassy way to remove and insert classes to an element on the DOM
  */
 klassy = (function () {
 
